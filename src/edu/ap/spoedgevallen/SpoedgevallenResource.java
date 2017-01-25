@@ -8,15 +8,15 @@ import edu.ap.xml.XMLParser;
 public class SpoedgevallenResource extends ServerResource {
 
 	@Get("html")
-	public String getRaces() {
+	public String getSpoedgevallen() {
 		XMLParser parser = new XMLParser();
-		return parser.getRaces();
+		return parser.getSpoedgevallen();
 	}
 	
 	@Post("txt")
-	public String addRace(String race) {
+	public String addSpoedgeval(String spoedgeval) {
 		XMLParser parser = new XMLParser();
-		return parser.addRace(race);
+		return parser.addSpoedgeval(spoedgeval);
 	}
 
 }

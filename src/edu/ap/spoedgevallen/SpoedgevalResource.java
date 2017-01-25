@@ -11,17 +11,17 @@ import edu.ap.xml.XMLParser;
 public class SpoedgevalResource extends ServerResource {
 
 	@Get("html")
-	public String getRace() {
-		String race_id = getAttribute("race_id");
+	public String getSpoedgeval() {
+		String spoedgeval_id = getAttribute("spoedgeval_id");
 		XMLParser parser = new XMLParser();
-		return parser.getRace(race_id);
+		return parser.getSpoedgeval(spoedgeval_id);
 	}
 	
 	@Post("txt")
-	public String addRunner(String runner) {
-		String race_id = getAttribute("race_id");
+	public String addPatientnaam(String patientnaam) {
+		String spoedgeval_id = getAttribute("spoedgeval_id");
 		XMLParser parser = new XMLParser();
-		return parser.addRunner(race_id, runner);
+		return parser.addRunner(spoedgeval_id, patientnaam);
 	}
 
 }

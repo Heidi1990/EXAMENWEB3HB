@@ -15,10 +15,10 @@ public class SpoedgevallenServer {
 		    component.getServers().add(Protocol.HTTP, 8181);
 	
 		    // Attach the sample application.
-		    component.getDefaultHost().attach("/Races", SpoedgevallenResource.class);
-		    //component.getDefaultHost().attach("/race/{race_id}", RaceResource.class);
-		   // component.getDefaultHost().attach("/race/{race_id}/runner", RaceRunnersResource.class);
-		    //component.getDefaultHost().attach("/race/{race_id}/runner/{runner_id}", RaceRunnerResource.class);
+		    component.getDefaultHost().attach("/Spoedgevallen", SpoedgevallenResource.class);
+		    //component.getDefaultHost().attach("/spoedgeval/{spoedgeval_id}", SpoedgevalResource.class);
+		   // component.getDefaultHost().attach("/spoedgeval/{spoedgeval_id}/patientnaam", RacepatientenResource.class);
+		    //component.getDefaultHost().attach("/spoedgeval/{spoedgeval_id}/patientnaam/{patientnaam_id}", SpoedgevalPatientnaamResource.class);
 		    
 			component.start();
 		} 
